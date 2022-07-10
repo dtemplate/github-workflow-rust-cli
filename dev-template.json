@@ -1,0 +1,5 @@
+{
+  "name": "github-workflow-rust-cli",
+  "description": "An official dev template that configures your cli's entire github workflow in rust",
+  "commands": []
+}
