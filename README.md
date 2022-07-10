@@ -20,6 +20,7 @@ dt new -t github-workflow-rust-cli
 
 - Go to your repository configuration and create a [secret in actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets) with the name `TOKEN_GITHUB`
 - In .github/workflows/create_new_tag.yml replace the `- master` in line 5 column 7 by `- {your-default-branch-name}` (replace `your-default-branch-name` by your default branch name)
+- In .github/workflows/release.yml in line 33 column 16 replace `dt` by the bin name of your cli, possibly it is the name of the `name` field in `Cargo.toml` but if you are in doubt run `cargo build` go to the `target/debug` folder and see the name of the executable that is there
 
 ## Results
 
